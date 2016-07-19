@@ -35,6 +35,7 @@ div#content div#side {
 	background-color:#f4f5f4;
 	float: left;
 	border-right: 1px solid #60663e;
+	position: relative;
 }
 
 div#leftNav a {
@@ -59,8 +60,12 @@ div#leftNav a:hover {
 }
 
 div#side div#login {
-	margin: 225px auto 0;
+	display: block;
+	margin: auto;
 	width: 153px;
+	position: absolute;
+	bottom: 0;
+	left: 15%;
 }
 
 div#content div#main {
