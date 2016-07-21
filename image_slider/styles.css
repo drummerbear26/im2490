@@ -1,0 +1,70 @@
+body, html {
+	width: 100%;
+	font-family: 'Roboto';
+	color: #727272;
+}
+
+.wrapper {
+	width: 560px;
+	margin: 0 auto;
+	position: relative;
+	text-align: center;
+	height: 400px;
+}
+
+.slider {
+	position: absolute;
+}
+
+.slider img {
+	width: 100%;
+	float: left;
+	display: none;
+}
+
+img.showImage {
+	display: inline-block;
+}
+
+img.hideImage {
+	display: none;
+}
+
+/* Revisions to pretty-up slider*/
+button:focus {
+	outline: 0;
+}
+
+button.next,
+button.prev {
+	position:absolute;
+	height: 100%;
+	top: 0;
+	background-color:: #212121;
+	color: #fff;
+	border: none;
+	opacity: 0.4;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 20px;	
+}
+
+button.next {
+	right: 0;	
+}
+
+button.prev {
+	left: 0;	
+}
+
+.slider button:hover {
+	opacity: 0.75;
+	cursor: pointer;
+}
+
+div.title {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
