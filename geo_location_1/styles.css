@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #212121;
+	font-size: 18px;	
+}
+
+.italic {
+	font-style: italic;
+	font-weight: 700;
+}
+
+.wrapper {
+	width: 400px;
+	margin: 30px auto 0 auto;
+	text-align: center;	
+}
+
+#result {
+	height: 50px;
+	width: 65px;
+	font-size: 20px;
+	line-height: 50px;
+	margin: 20px auto 0 auto;
+	text-align: center;
+	border-radius: 10%;
+	font-weight: 700;
+	background-color: #bcc6cc;
+	color: #1f3fa4;	
+}
+
+#showTemp {
+	margin: 30px auto 0;
+	width: 170px;
+	height: 50px;
+	background: #1f3fa4;	
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 17px;
+	color: #bcc6cc;
+	border: none;
+	border-radius: 5px;
+}
+
+#showTemp:hover {
+	cursor: pointer;	
+}
