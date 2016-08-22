@@ -5,6 +5,8 @@
     <title>Geo Location</title>
     
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0tzFG7DGqyhT9h_GcM11qQeQOI1iu3uw"
+  type="text/javascript"></script>
     <script src="script.js"></script>
     
    
@@ -23,9 +25,14 @@
         <p id="location">location</p>
         <p id="weather">weather</p>
         <p id="icon">image</p>
-        <p id="result">temp</p>
+        <p id="temp">temp</p>
+        <p id="humidity">humidity</p>
         <!-- Simple button -->
         <button id="showTemp">Find Temp</button>
+        
+        <div id="temp_map"></div>
     </div>
+    
+    
 </body>
 </html>

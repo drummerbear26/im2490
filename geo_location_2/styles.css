@@ -18,13 +18,14 @@ body {
 	text-align: center;
 	background-color: #74bbfb;
 	padding: 20px;
-	border-radius: 10%;	
+	border-radius: 10px;	
 }
 
 #location,
 #weather,
 #icon,
-#result {
+#temp,
+#humidity {
 	height: 50px;
 	width: 105px;
 	font-size: 20px;
@@ -39,6 +40,12 @@ body {
 
 #location {
 	width: 250px;	
+}
+
+#temp_map {
+	height: 500px;
+	border: 1px solid #1f3fa4;
+	/* display: none; */
 }
 
 #showTemp {

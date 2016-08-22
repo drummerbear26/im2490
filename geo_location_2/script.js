@@ -36,8 +36,21 @@ $(document).ready(function() {
 						$('#icon').html("<img class='newIcon' src=" + iconUrl + ">");
 						
 						var tempr = data.main.temp;
-						$('#result').text(tempr + 'º F');
+						$('#temp').html(tempr + 'º F');
+						
+						var humid = data.main.humidity;
+						$('#humidity').html(humid + '%');
 					}
+				});
+			}
+			
+			// navigator.geolocation.getCurrentPosition(initialize); 
+			initialize(position);
+
+			function initialize(position) {
+				var map = new google.maps.Map(document.getElementById('temp_map'), {
+					center: {lat: position.coords.latitude, lng: position.coords.longitude},
+					zoom: 8
 				});
 			}
 			
