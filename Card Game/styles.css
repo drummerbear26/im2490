@@ -1,0 +1,129 @@
+body {
+	margin: 30px;
+	font-family: "Georgia", serif;
+	line-height: 1.8em;
+	color: #333;	
+}
+
+h1, h2, h3, h4 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;	
+}
+
+h1 {
+	font-weight: bold;
+	margin: 20px;
+	color: #666;
+	font-size: 1.5em;	
+}
+
+/* See https://css-tricks.com/almanac/properties/u/user-select/ to see why we're using user-select: none */
+div#content {
+	margin: 80px 70px;
+	text-align: center;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;	
+}
+
+/* Styles to define the original and final cord positions */
+div#cardSlots {
+	margin: 50px auto 0;
+	background-color: #bcc6cc;
+}
+
+/* The initial pile of the unsorted cards */
+div#cardPile {
+	margin: 0 auto;
+	background-color: #1f3fa4;
+}
+
+/* Broad styles for the containers of the cards */
+div#cardSlots,
+div#cardPile {
+	width: 830px;
+	height: 120px;
+	padding: 20px;
+	border: 2px solid #333;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;	
+	-webkit-box-shadow: 0 0 0.3em black;
+	-moz-box-shadow: 0 0 0.3em black;
+	box-shadow: 0 0 0.3em black;
+}
+
+/* For the individual cars and slots */
+div#cardSlots div,
+div#cardPile div {
+	float: left;
+	width: 50px;
+	height: 78px;
+	padding: 40px 10px 0;
+	border: 2px solid #333;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin: 0 0 0 10px;
+	background-color: white;
+}
+
+div#cardSlots div:first-child,
+div#cardPile div:first-child {
+	margin-left: 0;	
+}
+
+/* For when something is dragged on top of a card slot */
+div#cardSlots div.hovered {
+	background-color: #aaa;
+}
+
+/* Overwrites card pile div styles (makes font bigger, changes background color, etc.) */
+div#cardPile div {
+	background-color: #666;
+	color: white;
+	font-size: 1.5em;
+	text-shadow: 0 0 0.3em black;	
+}
+
+/* Overwrites card slots border style */
+div#cardSlots div {
+	border-style: dashed;
+}
+
+div#cardPile div.ui-draggable-dragging {
+	-webkit-box-shadow: 0 0 0.5em black;
+	-moz-box-shadow: 0 0 0.5em black;
+	box-shadow: 0 0 0.5em black;	
+}
+
+/* Colors each individual card (for once it's been placed correctly in its spot) */
+div#cardichi.correct { background-color: red; }
+div#cardni.correct { background-color: brown; }
+div#cardsan.correct { background-color: orange; }
+div#cardyon.correct { background-color: yellow; }
+div#cardgo.correct { background-color: green; }
+div#cardroku.correct { background-color: cyan; }
+div#cardnana.correct { background-color: blue; }
+div#cardhachi.correct { background-color: indigo; }
+div#cardkyu.correct { background-color: purple; }
+div#cardju.correct { background-color: magenta; }
+
+/* Handles formatting the success message */
+div#successMessage {
+	position: absolute;
+	left: 580px;
+	top: 250px;
+	width: 0;
+	height: 0;
+	z-index: 40;
+	background-color: dodgerblue;
+	border: 2px solid #333;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0.3em 0.3em 0.5em black;
+	-moz-box-shadow: 0.3em 0.3em 0.5em black;
+	box-shadow: 0.3em 0.3em 0.5em black;
+	padding: 20px;		
+}

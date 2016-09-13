@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #1f3fa4;
+	font-size: 18px;	
+}
+
+.italic {
+	font-style: italic;
+	font-weight: 700;
+}
+
+.wrapper {
+	width: 500px;
+	margin: 30px auto 0 auto;
+	text-align: center;
+	background-color: #74bbfb;
+	padding: 20px;
+	border-radius: 10px;	
+}
+
+#location,
+#weather,
+#icon,
+#temp,
+#humidity {
+	height: 50px;
+	width: 105px;
+	font-size: 20px;
+	line-height: 50px;
+	margin: 20px auto 0 auto;
+	text-align: center;
+	border-radius: 10px;
+	font-weight: 700;
+	background-color: #bcc6cc;
+	color: #1f3fa4;	
+}
+
+#location {
+	width: 250px;	
+}
+
+#temp_map {
+	height: 500px;
+	border: 1px solid #1f3fa4;
+	/* display: none; */
+}
+
+#showTemp {
+	margin: 30px auto 0;
+	width: 170px;
+	height: 50px;
+	background: #1f3fa4;	
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 17px;
+	color: #bcc6cc;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 5px 5px 10px #5d5d5d;
+}
+
+#showTemp:hover {
+	cursor: pointer;	
+}

@@ -1,0 +1,94 @@
+div#content {
+	margin: 0 auto;
+	width: 800px;
+	height: 600px;
+	background: #bcc6cc;
+	border-radius: 10px;
+	box-shadow: 10px 10px 10px #5d5d5d;	
+}
+
+div#makeMeDraggable {
+	margin: 10px 0 0 10px;
+	width: 100px;
+	height: 50px;
+	background: #74bbfb;
+	color: #1f3fa4;	
+}
+
+div#makeMeDraggable2 {
+	clear: both;
+	margin: 10px 0 0 10px;
+	padding: 1px 0 0 0;
+	width: 100px;
+	height: 50px;
+	background: #74bbfb;
+	color: #1f3fa4;		
+}
+
+#makeMeDraggable.ui-draggable-dragging,
+#makeMeDraggable2.ui-draggable-dragging {
+	background: #1f3fa4;
+	color: #bcc6cc;
+	box-shadow: 3px 3px 10px #5d5d5d;
+}
+
+div#draggableHelper {
+	width: 300px;
+	height: 300px;
+	background: yellow;	
+}
+
+div#makeMeDroppable {
+	float: right;
+	margin: 10px 10px 0 0;
+	width: 150px;
+	height: 150px;
+	border: 1px dashed #999;	
+}
+
+div#makeMeDroppable div#dropArea {
+	margin: 40px auto; 
+	width: 100px;
+	height: 50px;
+	border: 1px solid #1f3fa4;	
+}
+
+div#makeMeDroppable2 {
+	float: right;
+	margin: 0 10px 0 0;
+	width: 150px;
+	height: 150px;
+	border: 1px dashed #999;	
+}
+
+div#makeMeDroppable2 div#dropArea2 {
+	margin: 40px auto; 
+	width: 100px;
+	height: 50px;
+	border: 1px solid #1f3fa4;	
+}
+
+div#makeMeDroppable3 {
+	clear: both;
+	float: right;
+	margin: 50px 10px 0 0;
+	width: 150px;
+	height: 150px;
+	border: 1px dashed #999;	
+}
+
+div#makeMeDroppable3 div#dropArea3 {
+	margin: 40px auto; 
+	width: 100px;
+	height: 50px;
+	border: 1px solid #1f3fa4;	
+}
+
+#makeMeDroppable.ui-state-highlight,
+#makeMeDroppable2.ui-state-highlight,
+#makeMeDroppable3.ui-state-highlight {
+	background: #1f3fa4;
+	color: #74bbfb;
+	font-weight: bold;
+	border: none;	
+}

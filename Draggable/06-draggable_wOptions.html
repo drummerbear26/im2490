@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <meta content="text.html;charset=utf-8" http-equiv="Content-Type" >
+    <title>A Draggable Element with Options</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    
+    <style>
+		div#makeMeDraggable {
+			float: left;	
+		}
+	</style>
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+    
+    <script type="text/javascript">
+	
+		$( init );
+		// Same this as:
+		// window.addEventListener("DOMContentLoaded', init): // in Javascript
+		// $(window).redy(init); // in jQuery
+		function init() {
+			$('#makeMeDraggable').draggable( {
+				snap: "#dropArea3",
+				cursor: "move"
+			} );
+			$('#makeMeDroppable').droppable( {
+				accept: "#makeMeDraggable2",
+				drop: handleDropEvent				
+			} );
+			$('#makeMeDraggable2').draggable( {
+				snap: "#dropArea",
+				cursor: "move"
+			} );
+			$('#makeMeDroppable2').droppable( {
+				accept: "#makeMeDraggable4",
+				drop: handleDropEvent				
+			} );
+			$('#makeMeDroppable3').droppable( {
+				accept: "#makeMeDraggable",
+				drop: handleDropEvent
+			} );
+		}
+		
+		function handleDropEvent ( event, ui ) {
+			$(this)
+				.addClass( "ui-state-highlight" )
+				.find( "p" )
+				.html( "Dropped!" ); 
+		}
+		
+	</script>
+
+</head>
+
+<body>
+	<div id="content">
+    	<div id="makeMeDraggable" class="ui-widget-content">
+        	<p>Drag to target</p>
+        </div>
+        <div id="makeMeDroppable">
+        	<p>Target!</p>
+        	<div id="dropArea" class="ui-widget-header"></div>
+        </div>
+        
+        <div id="makeMeDraggable2" class="ui-widget-content">
+        	<p>Target drag to</p>
+        </div>
+        <div id="makeMeDroppable2">
+        	<p>Target!</p>
+        	<div id="dropArea2" class="ui-widget-header"></div>
+        </div>
+        
+        <div id="makeMeDroppable3">
+        	<p>Target!</p>
+            <div id="dropArea3" class="ui-widget-header"></div>
+        </div>
+    </div>
+</body>
+</html>

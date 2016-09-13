@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Geo Location</title>
+    
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0tzFG7DGqyhT9h_GcM11qQeQOI1iu3uw"
+  type="text/javascript"></script>
+    <script src="script.js"></script>
+    
+   
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+	<!-- A wrapper for the app design -->
+    <div class="wrapper">
+    	<h2>Weather App in Javascript with jQuery</h2>
+        <p>What temperature is it at your <span class='italic'>exact</span> location?<br />
+         Click the button to find out...</p>
+        
+    <!-- Here we will show the final result -->
+        <p id="location">location</p>
+        <p id="weather">weather</p>
+        <p id="icon">image</p>
+        <p id="temp">temp</p>
+        <p id="humidity">humidity</p>
+        <!-- Simple button -->
+        <button id="showTemp">Find Temp</button>
+        
+        <div id="temp_map"></div>
+    </div>
+    
+    
+</body>
+</html>
