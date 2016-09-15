@@ -18,12 +18,9 @@ function init() {
 	// Create the pile of shuffled cards
 	var words = ['ichi', 'ni', 'san', 'yon', 'go', 'roku', 'nana', 'hachi', 'kyu', 'ju'];
 
-	// Randomly orders numbers array
-	//words.sort( function() { return Math.random() - .25 } );
-
-	for ( var i=1; i<=10; i++ ) {
-		$('<div>' + words[i-1] + '</div>')
-			.data( 'number', i )
+	for ( var i=0; i<10; i++ ) {
+		$('<div>' + words[i] + '</div>')
+			.data( 'number', i+1 )
 			.attr( 'id', 'card'+words[i] )
 			.appendTo( '#cardPile' )
 			.draggable( {
@@ -36,6 +33,9 @@ function init() {
 	
 	// Create the card slots
 	var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+	
+	// Randomly orders numbers array
+	numbers.sort( function() { return Math.random() - .25 } );
 
 	for ( var i=0; i<10; i++ ) {
 		$('<div>' + numbers[i] + '</div>')

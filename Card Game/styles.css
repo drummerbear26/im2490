@@ -2,11 +2,12 @@ body {
 	margin: 30px;
 	font-family: "Georgia", serif;
 	line-height: 1.8em;
-	color: #333;	
+	color: #c5d4e1;
+	background-color: #3b77ac;
 }
 
 h1, h2, h3, h4 {
-	font-family: "Lucida Grande", "Lucida Sans Unicode", sans-serif;	
+	font-family: "Verdana", sans-serif;
 }
 
 h1 {
@@ -41,31 +42,32 @@ div#cardPile {
 /* Broad styles for the containers of the cards */
 div#cardSlots,
 div#cardPile {
-	width: 830px;
-	height: 120px;
+	width: 930px;
+	height: 85px;
 	padding: 20px;
 	border: 2px solid #333;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;	
-	-webkit-box-shadow: 0 0 0.3em black;
-	-moz-box-shadow: 0 0 0.3em black;
-	box-shadow: 0 0 0.3em black;
+	-webkit-box-shadow: 0.3em 0.3em 1em #5d5d5d;
+	-moz-box-shadow: 0.3em 0.3em 1em #5d5d5d;
+	box-shadow: 0.3em 0.3em 1em #5d5d5d;
 }
 
 /* For the individual cars and slots */
 div#cardSlots div,
 div#cardPile div {
 	float: left;
-	width: 50px;
-	height: 78px;
-	padding: 40px 10px 0;
+	width: 60px;
+	height: 50px;
+	padding: 25px 10px 0;
 	border: 2px solid #333;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 	margin: 0 0 0 10px;
 	background-color: white;
+	font-size: 1.5em;
 }
 
 div#cardSlots div:first-child,
@@ -80,15 +82,16 @@ div#cardSlots div.hovered {
 
 /* Overwrites card pile div styles (makes font bigger, changes background color, etc.) */
 div#cardPile div {
-	background-color: #666;
+	background-color: #74bbfb;
 	color: white;
-	font-size: 1.5em;
 	text-shadow: 0 0 0.3em black;	
 }
 
 /* Overwrites card slots border style */
 div#cardSlots div {
 	border-style: dashed;
+	color: #333333;
+	font-family: "Verdana", sans-serif;
 }
 
 div#cardPile div.ui-draggable-dragging {
@@ -98,26 +101,30 @@ div#cardPile div.ui-draggable-dragging {
 }
 
 /* Colors each individual card (for once it's been placed correctly in its spot) */
-div#cardichi.correct { background-color: red; }
-div#cardni.correct { background-color: brown; }
-div#cardsan.correct { background-color: orange; }
-div#cardyon.correct { background-color: yellow; }
-div#cardgo.correct { background-color: green; }
-div#cardroku.correct { background-color: cyan; }
-div#cardnana.correct { background-color: blue; }
-div#cardhachi.correct { background-color: indigo; }
-div#cardkyu.correct { background-color: purple; }
-div#cardju.correct { background-color: magenta; }
+div#cardichi.correct,
+div#cardni.correct,
+div#cardsan.correct,
+div#cardyon.correct,
+div#cardgo.correct,
+div#cardroku.correct,
+div#cardnana.correct,
+div#cardhachi.correct,
+div#cardkyu.correct,
+div#cardju.correct {
+	background-color: #3b77ac;
+	color: #c5d4e1;
+}
 
 /* Handles formatting the success message */
 div#successMessage {
 	position: absolute;
 	left: 580px;
 	top: 250px;
-	width: 0;
-	height: 0;
+	margin: 0 auto;
+	width: auto;
+	height: auto;
 	z-index: 40;
-	background-color: dodgerblue;
+	background-color: #74bbfb;
 	border: 2px solid #333;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -126,4 +133,13 @@ div#successMessage {
 	-moz-box-shadow: 0.3em 0.3em 0.5em black;
 	box-shadow: 0.3em 0.3em 0.5em black;
 	padding: 20px;		
+}
+
+div#successMessage button {
+	border-radius: 10px;
+}
+
+button:hover {
+	background-color: #1f3fa4;
+	color: #bcc6cc;
 }
